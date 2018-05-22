@@ -65,8 +65,8 @@ fac_sort = fac_dfsort.to_dict(orient ='list')
 
 ## Description text
 
-desc = Paragraph(text = """Reimbursement rates for USGS Water Science Centers associated with each 
-        state in the contiguous United States""")
+desc = Paragraph(text = """Reimbursement rates for USGS Water Science Centers associated with states
+         in the contiguous United States""")
 ##Setting data source
 
 source = ColumnDataSource(data = comp)
