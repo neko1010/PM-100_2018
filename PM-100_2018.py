@@ -233,6 +233,6 @@ curdoc().add_root(layout)
 
 ## Use 'save' instead of 'output_file' to output the entire layout to 'index.html' instead of single plot!!
 
-save(layout, "index.html")
+save(layout, "index.html", title = "2018 Water Science Center Overhead")
 
 show(layout)
