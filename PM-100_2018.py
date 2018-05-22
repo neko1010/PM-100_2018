@@ -117,7 +117,7 @@ del states["AK"]
 
 ## Reading the datafile
 
-with open("../data/states.txt") as f:
+with open("states.txt") as f:
     lines = f.readlines()
     for line in lines:
         items = line.split("\t")
@@ -233,6 +233,6 @@ curdoc().add_root(layout)
 
 ## Use 'save' instead of 'output_file' to output the entire layout to 'index.html' instead of single plot!!
 
-save(layout, "../data/index.html", title = "2018 Water Science Center Overhead")
+save(layout, "index.html", title = "2018 Water Science Center Overhead")
 
 show(layout)

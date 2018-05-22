@@ -10,7 +10,7 @@ def extractWsc ():
     in the data source file...
     """
     ##importing data
-    alloc_org, cc_name, dir_cc, reimburse_cc, reimburse_fac, reimburse_bur, reimburse_comp = get_cost_data('../data/data.txt')
+    alloc_org, cc_name, dir_cc, reimburse_cc, reimburse_fac, reimburse_bur, reimburse_comp = get_cost_data('data.txt')
     #alloc_org, cc_name, dir_cc, reimburse_cc, reimburse_fac, reimburse_bur, reimburse_comp = get_cost_data(sys.argv[1])
 
 
