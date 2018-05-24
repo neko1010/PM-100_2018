@@ -65,8 +65,8 @@ fac_sort = fac_dfsort.to_dict(orient ='list')
 
 ## Description text
 
-desc = Paragraph(text = """Reimbursement rates for USGS Water Science Centers associated with states
-         in the contiguous United States""")
+desc = Paragraph(text = """Reimbursement rates for USGS Water Science Centers associated with each 
+        state in the contiguous United States""")
 ##Setting data source
 
 source = ColumnDataSource(data = comp)
@@ -74,7 +74,7 @@ source = ColumnDataSource(data = comp)
 ## Setting figure params
 
 p = figure(x_range = source.data['ccName'], plot_height = 500, plot_width = 1000, 
-        title = "Reimbursement Rates 2018 (%)", min_border_left = 100, tools = "pan, wheel_zoom, reset, save")
+        title = "Reimbursement Rates 2018 (%)", min_border_left = 100, tools = " wheel_zoom, reset, save")
 
 
 ## Instantiating hover tool
@@ -129,7 +129,7 @@ with open("states.txt") as f:
 ## Choropleth
 
 choro = figure(title = "Composite Reimbursement by State 2018 (%)", plot_height = 575, plot_width = 1000,
-        tools = "pan, wheel_zoom, reset, save")
+        tools = " wheel_zoom, reset, save")
 
 
 EXCLUDED = ("ak", "hi", "pr", "gu", "vi", "mp", "as")
@@ -233,6 +233,6 @@ curdoc().add_root(layout)
 
 ## Use 'save' instead of 'output_file' to output the entire layout to 'index.html' instead of single plot!!
 
-save(layout, "index.html", title = "2018 Water Science Center Overhead")
+save(layout, "index.html")
 
 show(layout)
